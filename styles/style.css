@@ -6,29 +6,53 @@
   display: grid;
   grid-template-rows: 1fr min-content 1fr;
   gap: 40px;
-  justify-self: center;
-  position: relative;
-}
-.header {
-  padding: 10px;
   align-items: end;
+  position: relative;
+  color: var(--color);
+  font-size: var(--font);
 }
+
+.header {
+  display: grid;
+  padding: 10px;
+  font-style: normal;
+  font-weight: 700;
+}
+
 .header__theme-menu {
   justify-items: end;
+  color: #FF0070;
 }
+
 .header_rec {
-  justify-items: end;
   width: 52.0px;
   height: 26.0px;
-  border: 1px green solid;
+  border: 3px solid green;
   position: absolute;
   padding-top: 10px;
   padding-right: 19px;
 }
+
 .header_rec::after {
   content: '';
   flex-shrink: 0;
   fill: #FF0070;
   filter: drop-shadow(0px 0px 4px #FF0070);
 
+}
+
+h1 {
+  min-width: 355px;
+  flex-shrink: 0;
+  color: #DB00FF;
+  text-shadow: 4px 4px 0px #FF0070;
+  font-family: "IBM Plex Mono";
+  font-size: 116px;
+  line-height: 82.5%;
+
+}
+.header__content {
+  color: #000028;
+  line-height: 23.4px;
+  background-color: #FF0070;
 }
