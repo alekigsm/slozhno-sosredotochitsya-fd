@@ -5,12 +5,14 @@
 :root {
   --font-family: "IBM Plex Mono", sans-serif;
   --global-background-color: #000028;
-  --background-images: url(../images/cover-image.png);
+  --background-images: url(../images/cover-image-dark.png);
   --global-color: #f1b2ce;
+  --accent-color:#ff0070;
+  --title-color:#db00ff;
+  --text-color:#000028;
   --font-size:18px;
   --font-weight:400;
+  --font-weight-bold:700;
   --font-style:normal;
   --line-height:23.4px;
-  --accent-color:#ff0070;
-
 }

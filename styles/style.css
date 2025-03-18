@@ -9,7 +9,7 @@
   color: var(--global-color, #F1B2CE);
   font-size: var(--font-size, 18px);
   background-color: var(--global-background-color, #000028);
-  background-image: var(--background-images, url(../images/cover-image.png));
+  background-image: var(--background-images, url(../images/cover-image-dark.png));
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -26,21 +26,27 @@
   color: var(--accent-color,#FF0070);
 }
 
-.decorated-zone::before {
+.header::before {
   content: '';
   border-top: 1px solid var(--accent-color,#FF0070);
   border-right: 1px solid var(--accent-color,#FF0070);
   justify-self: end;
   inline-size: 25.0px;
   block-size: 25.0px;
+  position: absolute;
+  top: 10px;
+  right: 10px;
 }
 
-.decorated-zone::after {
+.header::after {
   content: '';
   inline-size: 25.0px;
   block-size: 25.0px;
   border-bottom: 1px solid var(--accent-color,#FF0070);
   border-left: 1px solid var(--accent-color,#FF0070);
+  position: absolute;
+  bottom:10px;
+  left: 10px;
 }
 
 .header__theme-menu {
@@ -56,7 +62,10 @@
 .header__theme-menu-button {
   min-inline-size: 70px;
   min-block-size: 26px;
+  background-color: transparent;
+  border: none;
 }
+
 .header__rec {
   inline-size: 52.0px;
   block-size: 26.0px;
@@ -66,14 +75,14 @@
 }
 
 .header__rec::after {
-  content: '';
-  fill: #FF0070;
-  filter: drop-shadow(0px 0px 4px #FF0070);
+  content: 'REC';
+  fill: var(--accent-color,#FF0070);
+  filter: drop-shadow(0px 0px 4px var(--accent-color,#FF0070));
 }
 
 .header__title {
   flex-shrink: 0;
-  color: var(--color,#DB00FF);
+  color: var(--title-color,#DB00FF);
   text-shadow: 4px 4px 0 var(--accent-color,#FF0070);;
   font-family: "IBM Plex Mono";
   font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
@@ -81,6 +90,26 @@
 }
 
 .header__content {
-  color: #000028;
+  align-self: center; 
+  font-weight: var(--font-weight-bold,700);
+}
+
+.title-decor{
   background-color: var(--accent-color,#FF0070);
+  color: var(--text-color,#000028);
+}
+
+.main {
+  display: grid;
+  gap:50px;
+}
+.main__title {
+  color: var(--accent-color,#FF0070);
+  font-size: var(--font-size, 18px);
+  font-weight: var(--font-weight-bold, 700);
+  font-style: var(--font-style,  normal);
+  line-height: var(--line-height, 23.4px);
+}
+h4 {
+  font-weight: var(--font-weight, 400);
 }
