@@ -6,53 +6,82 @@
   display: grid;
   grid-template-rows: 1fr min-content 1fr;
   gap: 40px;
-  align-items: end;
-  position: relative;
-  color: var(--color);
-  font-size: var(--font);
+  color: var(--global-color, #F1B2CE);
+  font-size: var(--font-size, 18px);
+  background-color: var(--global-background-color, #000028);
+  background-image: var(--background-images, url(../images/cover-image.png));
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
 }
 
 .header {
-  display: grid;
+  position: relative;
   padding: 10px;
-  font-style: normal;
-  font-weight: 700;
+  display: grid;
+  grid-template-rows: 1fr min-content 1fr;
+  inline-size: 100%;
+  block-size: 100vh;
+  color: var(--accent-color,#FF0070);
+}
+
+.decorated-zone::before {
+  content: '';
+  border-top: 1px solid var(--accent-color,#FF0070);
+  border-right: 1px solid var(--accent-color,#FF0070);
+  justify-self: end;
+  inline-size: 25.0px;
+  block-size: 25.0px;
+}
+
+.decorated-zone::after {
+  content: '';
+  inline-size: 25.0px;
+  block-size: 25.0px;
+  border-bottom: 1px solid var(--accent-color,#FF0070);
+  border-left: 1px solid var(--accent-color,#FF0070);
 }
 
 .header__theme-menu {
-  justify-items: end;
-  color: #FF0070;
+  justify-self: end;
+  align-self: center;
 }
 
-.header_rec {
-  width: 52.0px;
-  height: 26.0px;
-  border: 3px solid green;
+.header__theme-menu-list {
+  display: grid;
+  gap:10px;
+ 
+}
+.header__theme-menu-button {
+  min-inline-size: 70px;
+  min-block-size: 26px;
+}
+.header__rec {
+  inline-size: 52.0px;
+  block-size: 26.0px;
   position: absolute;
-  padding-top: 10px;
-  padding-right: 19px;
+  top: 10px;
+  right: 19px;
 }
 
-.header_rec::after {
+.header__rec::after {
   content: '';
-  flex-shrink: 0;
   fill: #FF0070;
   filter: drop-shadow(0px 0px 4px #FF0070);
-
 }
 
-h1 {
-  min-width: 355px;
+.header__title {
   flex-shrink: 0;
-  color: #DB00FF;
-  text-shadow: 4px 4px 0px #FF0070;
+  color: var(--color,#DB00FF);
+  text-shadow: 4px 4px 0 var(--accent-color,#FF0070);;
   font-family: "IBM Plex Mono";
-  font-size: 116px;
+  font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
   line-height: 82.5%;
-
 }
+
 .header__content {
   color: #000028;
   line-height: 23.4px;
-  background-color: #FF0070;
+  background-color: var(--accent-color,#FF0070);
 }

@@ -4,7 +4,13 @@
 */
 :root {
   --font-family: "IBM Plex Mono", sans-serif;
-  --background-color: #000028;
-  --color: #F1B2CE;
-  --font:18px;
+  --global-background-color: #000028;
+  --background-images: url(../images/cover-image.png);
+  --global-color: #f1b2ce;
+  --font-size:18px;
+  --font-weight:400;
+  --font-style:normal;
+  --line-height:23.4px;
+  --accent-color:#ff0070;
+
 }
