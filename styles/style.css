@@ -82,6 +82,5 @@
 
 .header__content {
   color: #000028;
-  line-height: 23.4px;
   background-color: var(--accent-color,#FF0070);
 }
