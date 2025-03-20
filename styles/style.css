@@ -28,8 +28,8 @@
 
 .header::before {
   content: '';
-  border-top: 1px solid var(--accent-color,#FF0070);
-  border-right: 1px solid var(--accent-color,#FF0070);
+  border-inline-end: 1px solid var(--accent-color,#FF0070);
+  border-block-start: 1px solid var(--accent-color,#FF0070);
   justify-self: end;
   inline-size: 25.0px;
   block-size: 25.0px;
@@ -42,8 +42,8 @@
   content: '';
   inline-size: 25.0px;
   block-size: 25.0px;
-  border-bottom: 1px solid var(--accent-color,#FF0070);
-  border-left: 1px solid var(--accent-color,#FF0070);
+  border-inline-start: 1px solid var(--accent-color,#FF0070);
+  border-block-end: 1px solid var(--accent-color,#FF0070);
   position: absolute;
   bottom:10px;
   left: 10px;
@@ -116,7 +116,8 @@
 .main {
   display: grid;
   gap:50px;
-  padding: 10px
+  padding-inline-start: 10px;
+  padding-inline-end: 10px;
 }
 
 .main__section {
@@ -128,6 +129,14 @@
   display: grid;
   gap: 10px;
 }
+.main__section__card-special {
+  display: grid;
+  gap: 20px;
+}
+
+.main__content__card {
+  margin-block-start: 10px;
+  }
 
 .main__title {
   color: var(--accent-color,#FF0070);
@@ -135,7 +144,21 @@
   font-weight: var(--font-weight-bold, 700);
   font-style: var(--font-style,  normal);
   line-height: var(--line-height, 23.4px);
-  margin-bottom: 10px;
+}
+
+.main__section__card-list {
+  display: grid;
+  gap: 20px;
+}
+
+.main__section__card-item {
+  margin-block-start: 10px;
+}
+
+.text-shadow {
+  text-shadow: 1px 1px 0 var(--accent-color,#FF0070);
+  line-height: 82.5%;
+  text-decoration: none;
 }
 
 h4 {
@@ -145,7 +168,6 @@ h4 {
 .main__gallery {
   display: grid;
   gap: 10px;
-  margin-top: 10px;
 }
 
 .item_gallery {
@@ -153,12 +175,36 @@ h4 {
 }
 
 .footer {
+  position: relative;
   display: grid;
-  align-items: center;
+  align-content: center;
   justify-content: center;
   padding: 10px;
+  line-height: 100vh;
+  block-size: 100%;
+}
+.footer::before {
+  content: '';
+  border-inline-end: 1px solid var(--accent-color,#FF0070);
+  border-block-start: 1px solid var(--accent-color,#FF0070);
+  justify-self: end;
+  inline-size: 25.0px;
+  block-size: 25.0px;
+  position: absolute;
+  top: 10px;
+  right: 10px;
 }
 
+.footer::after {
+  content: '';
+  inline-size: 25.0px;
+  block-size: 25.0px;
+  border-inline-start: 1px solid var(--accent-color,#FF0070);
+  border-block-end: 1px solid var(--accent-color,#FF0070);
+  position: absolute;
+  bottom:10px;
+  left: 10px;
+}
 .footer__title {
   text-shadow: 1px 1px 0 var(--accent-color,#FF0070);;
 }
