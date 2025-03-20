@@ -47,22 +47,22 @@
         </ul>
         
       </nav>
-      <h1 class="header__title">
+      <h1 class="title">
         no focus
       </h1>
       <p class="header__content title-decor">
-        Что делать, когда не можешь<br> делать ничего
+        Что делать, когда не можешь <br>делать ничего 
          Или почему нам так сложно 
         сконцентрироваться, особенно когда очень надо
       </p>
     </header>
     <main class="main">
-      <section class="section">
+      <section class="main__section">
+        <div class="main__section__card">
         <h2 class="main__title">
           Почему сосредоточиться так сложно
         </h2>
         <h3 class="title-decor">Многозадачность
-
         </h3>
         <p>
           Особенно сложно сосредоточиться, когда задач много и все они — важные.
@@ -82,8 +82,10 @@
            Например, смотрим лайки в соцсетях. В это время и выделяется дофамин — и мы чувствуем удовольствие. 
           Получается замкнутый круг: чем больше отвлекаешься, тем больше удовольствия получаешь.
         </p>
+        </div>
       </section>
-      <section class="section">
+      <section class="main__section">
+        <div class="main__section__card">
         <h2 class="main__title">
           Что снижает концентрацию внимания?
         </h2>
@@ -117,9 +119,10 @@
            А чтобы вернуться к состоянию полной концентрации, человеку в среднем нужно 20 минут.
            Вот и получается, что чем больше времени мы проводим в гаджетах, тем больше времени затем нужно, чтобы вернуться к работе.
         </p>
-
+      </div>
       </section>
-      <section class="section">
+      <section class="main__section">
+        <div class="main__section__card">
         <h2 class="main__title">
           Как концентрироваться лучше, 
           чем золотая рыбка (то есть дольше трёх секунд)
@@ -164,22 +167,28 @@
            достаточно нескольких минут или даже секунд. 
           А вот интересная книга способна затянуть и на несколько часов и круто тренирует направленное внимание.
         </p>
+        </div>
       </section>
-      <section class="section">
-        <h2 class="title-decor">
+      <section class="main__section">
+        <div class="main__section__card">
+        <h3 class="title-decor">
           А можно в картинках?
-        </h2>
-        <img src="./images/sunset.png" alt="">
-        <img src="./images/ice-cream.png" alt="">
-        <img src="./images/tape.png" alt="">
-        <img src="./images/books.png" alt="">
-        <img src="/images/street.png" alt="">
+        </h3>
+        <div class="main__gallery">
+          <img class="item_gallery" loading="lazy" src="./images/sunset.png" alt="свтит солнце">
+          <img class="item_gallery" loading="lazy" src="./images/ice-cream.png" alt="мороженное в тарелке">
+          <img class="item_gallery" loading="lazy" src="./images/tape.png" alt="аудиокасета">
+          <img class="item_gallery" loading="lazy" src="./images/books.png" alt="стопка книжек">
+          <img class="item_gallery" loading="lazy" src="./images/street.png" alt="безлюдная улица">
+        </div>
+        </div>
       </section>
+    
     </main>
-    <footer>
-      <span>
+    <footer class="footer decorated-zone">
+      <h2 class="footer__title title">
         focus
-      </span>
+      </h2>
     </footer>
   </body>
 </html>

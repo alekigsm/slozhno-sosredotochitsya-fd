@@ -18,12 +18,12 @@
 
 .header {
   position: relative;
-  padding: 10px;
   display: grid;
   grid-template-rows: 1fr min-content 1fr;
   inline-size: 100%;
   block-size: 100vh;
   color: var(--accent-color,#FF0070);
+  padding: 10px;
 }
 
 .header::before {
@@ -57,12 +57,13 @@
 .header__theme-menu-list {
   display: grid;
   gap:10px;
- 
 }
+
 .header__theme-menu-button {
   min-inline-size: 70px;
   min-block-size: 26px;
   background-color: transparent;
+  text-transform: lowercase;
   border: none;
 }
 
@@ -72,19 +73,30 @@
   position: absolute;
   top: 10px;
   right: 19px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__rec::before {
+  content: 'REC';
+  fill: var(--accent-color,#FF0070);
+  font-style: var(--font-style, normal);
 }
 
 .header__rec::after {
-  content: 'REC';
-  fill: var(--accent-color,#FF0070);
-  filter: drop-shadow(0px 0px 4px var(--accent-color,#FF0070));
+  content: '';
+  display: inline-block;
+  width: 9px;
+  height: 9px;
+  border-radius: 100%;
+  box-shadow: 0 0 4px 2px var(--accent-color, #ff0070);
+  background-color: var(--accent-color, #ff00)
 }
 
-.header__title {
-  flex-shrink: 0;
+.title {
   color: var(--title-color,#DB00FF);
-  text-shadow: 4px 4px 0 var(--accent-color,#FF0070);;
-  font-family: "IBM Plex Mono";
+  text-shadow: 4px 4px 0 var(--accent-color,#FF0070);
   font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
   line-height: 82.5%;
 }
@@ -92,24 +104,61 @@
 .header__content {
   align-self: center; 
   font-weight: var(--font-weight-bold,700);
+  line-height: 23,4px;
 }
 
 .title-decor{
   background-color: var(--accent-color,#FF0070);
   color: var(--text-color,#000028);
+
 }
 
 .main {
   display: grid;
   gap:50px;
+  padding: 10px
 }
+
+.main__section {
+  display: grid;
+  gap: 20px;
+}
+
+.main__section__card {
+  display: grid;
+  gap: 10px;
+}
+
 .main__title {
   color: var(--accent-color,#FF0070);
   font-size: var(--font-size, 18px);
   font-weight: var(--font-weight-bold, 700);
   font-style: var(--font-style,  normal);
   line-height: var(--line-height, 23.4px);
+  margin-bottom: 10px;
 }
+
 h4 {
   font-weight: var(--font-weight, 400);
+}
+
+.main__gallery {
+  display: grid;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.item_gallery {
+  inline-size: 100%;
+}
+
+.footer {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+}
+
+.footer__title {
+  text-shadow: 1px 1px 0 var(--accent-color,#FF0070);;
 }
