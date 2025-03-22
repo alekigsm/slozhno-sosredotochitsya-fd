@@ -2,6 +2,7 @@
   Переменные для вашего проекта
   и их переопределение под различные устройства
 */
+/* stylelint-disable-next-line rule-empty-line-before */
 :root {
   --font-family: 'IBM Plex mono';
   --background-images: url(../images/cover-image-dark.png);

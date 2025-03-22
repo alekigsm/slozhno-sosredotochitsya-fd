@@ -2,7 +2,6 @@
 
 .page {
   /* сохраните в разметке и стилях класс page у тега body. Он удобен, чтобы составлять селекторы для разных цветовых тем. */
-
   display: grid;
   grid-template-rows: 1fr min-content 1fr;
   gap: 40px;
@@ -127,12 +126,13 @@
   text-shadow: 4px 4px 0 var(--global-background-color, #ff0070);
   font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
   line-height: 82.5%;
+  font-weight:var(--font-weight-bold, 700) ;
 }
 
 .header__content {
   align-self: center;
   font-weight: var(--font-weight-bold, 700);
-  line-height: 23, 4px;
+  line-height: var(--line-height, 23.4px);
 }
 
 .title-decor {
@@ -160,6 +160,7 @@
 .main__unique-h3 {
   margin-block-end: 10px;
   font-size: 18px;
+  line-height: var(--line-height, 23.4px);
 }
 
 .main__section-special {
@@ -172,6 +173,8 @@
 
 .main__content__card {
   margin-block-start: var(--paddings, 10px);
+  line-height: var(--line-height, 23.4px);
+  font-weight: var( --font-weight, 400);
 }
 
 .main__section__card-special {
@@ -340,7 +343,7 @@ h4 {
 }
 
 @media (width >= 1024px) {
-  
+
   .header__theme-menu {
     justify-self: center;
     align-self: start;
