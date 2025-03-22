@@ -222,6 +222,7 @@ h4 {
 
 h5 {
   font-weight: var(--font-weight, 400);
+  font-size: var( --font-size, 18px);
 }
 
 .main__gallery {
