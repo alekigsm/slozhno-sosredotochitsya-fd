@@ -10,10 +10,14 @@
     чем стили в медиазапросе предпочтений пользователя
   */
   --background-images: url(../images/cover-image-dark.png);
-  --global-background-color: #ff0070;
+  --global-background-color: #000028;
   --global-color: #f1b2ce;
   --accent-color: #ff0070;
   --title-color: #db00ff;
   --text-color: #000028;
   --h2-title: #ff0070;
+}
+
+.theme-dark .header__rec {
+  display:inline-flex;
 }
