@@ -16,6 +16,7 @@
   --title-color: #ffc2e6;
   --text-color: #353430;
   --h2-title: #353430;
+  --border-vision:rgba(50, 49, 45, 0.40);
 }
 
 .theme-light .header__rec {
@@ -32,6 +33,7 @@
     --title-color: #ffc2e6;
     --text-color: #353430;
     --h2-title: #353430;
+    --border-vision:rgba(50, 49, 45, 0.40);
   }
 
   .header__rec {

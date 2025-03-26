@@ -16,6 +16,7 @@
   --title-color: #db00ff;
   --text-color: #000028;
   --h2-title: #ff0070;
+  --border-vision:rgba(255, 0, 112, 0.4);
 }
 
 .theme-dark .header__rec {

@@ -17,6 +17,7 @@
   background-attachment: fixed;
   background-size: cover;
   font-weight: var( --font-weight, 400);
+ 
 }
 
 .header {
@@ -84,7 +85,7 @@ align-self: center;
 
 .header__theme-menu-button:hover {
   /* stylelint-disable-next-line color-function-notation */
-  border: 1px solid rgba(255, 0, 112, 0.4);
+  border: 1px solid var(--border-vision, 255, 0, 112, 0.4);
 }
 
 .header__theme-menu-button:focus {
@@ -101,8 +102,8 @@ align-self: center;
 }
 
 .header__rec {
-  inline-size: 52px;
-  block-size: 26px;
+  min-inline-size: 52px;
+  min-block-size: 26px;
   position: absolute;
   top: var(--paddings, 10px);
   right: calc(var(--paddings, 10px) + 9px);
@@ -182,6 +183,7 @@ align-self: center;
   margin-block-start: var(--paddings, 10px);
   line-height: var(--line-height, 23.4px);
   font-weight: var( --font-weight, 400);
+  align-self: flex-start;
 }
 
 .main__title {
@@ -190,10 +192,12 @@ align-self: center;
   font-weight: var(--font-weight-bold, 700);
   font-style: var(--font-style, normal);
   line-height: var(--line-height, 23.4px);
+  align-self: start;
 }
 
 .main__title-text {
   font-size: var(--font-size, 18px);
+  align-self: start;
 }
 
 .main__section__card-list {
