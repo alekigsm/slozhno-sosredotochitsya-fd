@@ -183,7 +183,7 @@ align-self: center;
   margin-block-start: var(--paddings, 10px);
   line-height: var(--line-height, 23.4px);
   font-weight: var( --font-weight, 400);
-  align-self: flex-start;
+  align-self: start;
 }
 
 .main__title {
