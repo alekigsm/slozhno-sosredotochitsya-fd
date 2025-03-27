@@ -16,6 +16,7 @@
   --title-color: #db00ff;
   --text-color: #000028;
   --h2-title: #ff0070;
+  /* stylelint-disable-next-line color-function-notation */
   --border-vision:rgba(255, 0, 112, 0.4);
 }
 
