@@ -102,8 +102,9 @@ align-self: center;
 }
 
 .header__rec {
-  min-inline-size: 52px;
-  min-block-size: 26px;
+ /* min-inline-size: 52px;*/
+ /* min-block-size: 26px;*/
+  gap: 10px;
   position: absolute;
   top: var(--paddings, 10px);
   right: calc(var(--paddings, 10px) + 9px);
@@ -164,6 +165,10 @@ align-self: center;
   /* gap: 10px; */
 }
 
+.main__section__cards {
+
+}
+
 .main__unique-title {
   margin-block-end: 10px;
   font-size: 18px;
@@ -184,6 +189,10 @@ align-self: center;
   line-height: var(--line-height, 23.4px);
   font-weight: var( --font-weight, 400);
   align-self: start;
+}
+
+.main__content__cards {
+  margin-block-end: 20px;
 }
 
 .main__title {
